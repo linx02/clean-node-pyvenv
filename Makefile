@@ -1,6 +1,6 @@
 CC = clang          # Compiler
 CFLAGS = -g -Wall   # Flags for debugging and warnings
-TARGET = clean-node-venv       # Output executable name
+TARGET = clean-node-pyvenv       # Output executable name
 
 # Default target
 all: $(TARGET)
