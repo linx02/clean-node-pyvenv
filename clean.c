@@ -154,6 +154,16 @@ int dump_pyvenv(const folder *folder_) {
         if (result_ != 0){
             printf(RED "Failed to remove venv_dump.txt" RESET "\n");
         }
+
+        printf(YELLOW "Delete anyways? (y/n) " RESET);
+        char buffer[10];
+
+        fgets(buffer, sizeof(buffer), stdin);
+        char confirm = buffer[0];
+
+        if(confirm == 'y'){
+            result = 0;
+        }
     }
 
     return result;
